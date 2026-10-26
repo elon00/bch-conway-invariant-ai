@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "bch-conway-invariant-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Bitcoin Cash",
+        "PROJECT_TICKER": "BCHCWY"
+      },
+      "tools": [
+        {
+          "name": "verify_bchcwy_invariants",
+          "description": "Verifies deterministic invariants for BCH Conway Invariant AI on Bitcoin Cash."
+        },
+        {
+          "name": "execute_bchcwy_action",
+          "description": "Executes authenticated Invariant Engine state transition."
+        }
+      ]
+    }
+  }
+}
